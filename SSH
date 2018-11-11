@@ -131,6 +131,3 @@ class UsersController < ApplicationController
     end
   end
 end
-
-
-this is my text
