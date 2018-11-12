@@ -2,9 +2,7 @@ class UsersController < ApplicationController
   include DeviseTokenAuth::Concerns::SetUserByToken
   include Swagger::Docs::Methods
   include Swagger::Blocks
-  before_action :configure_permitted_parameters, if: :devise_controller?
-
- 
+  before_action :configure_permitted_p
 private  
 
   def configure_permitted_parameters
