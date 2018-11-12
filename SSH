@@ -3,12 +3,7 @@ class UsersController < ApplicationController
   include Swagger::Docs::Methods
   include Swagger::Blocks
   before_action :configure_permitted_p
-private  
 
-  def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(
-        :sign_up,
-        keys: [
             :email,
             :password,
             :password_confirmation,
